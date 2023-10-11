@@ -13,7 +13,8 @@ export function HomeSection({ getRef }: HomeSectionProps): JSX.Element {
             <div className="flex w-full gap-4">
                 <div className="flex flex-col w-2/5">
                     <Typography variant="headline" className="text-6xl mb-4">
-                        Frontend Features, Masterfully Crafted.
+                        Frontend Features. <br />
+                        Masterfully Crafted.
                     </Typography>
                     <h1 className={styles.title}>
                         Architecting
