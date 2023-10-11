@@ -3,25 +3,47 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+    --color-primary: #9082E3;
+    --color-secondary: #ff8800;
+    --color-background: #cdcdcd;
+    --color-card: #ffffff;
+    --color-text: #000000;
+    --color-text-secondary: #ffffff;
+    --color-text-light: #707070;
+    --color-text-lighter: #404040;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+@font-face {
+    font-family: 'ComfortaaLight';
+    font-style: normal;
+    font-weight: 300;
+    src: url('/fonts/Comfortaa-Light.ttf') format('truetype');
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+@font-face {
+    font-family: 'Comfortaa';
+    font-style: normal;
+    font-weight: 400;
+    src: url('/fonts/Comfortaa-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'ComfortaaMedium';
+    font-style: normal;
+    font-weight: 500;
+    src: url('/fonts/Comfortaa-Medium.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'ComfortaaSemiBold';
+    font-style: normal;
+    font-weight: 600;
+    src: url('/fonts/Comfortaa-SemiBold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'ComfortaaBold';
+    font-style: normal;
+    font-weight: 700;
+    src: url('/fonts/Comfortaa-Bold.ttf') format('truetype');
 }
