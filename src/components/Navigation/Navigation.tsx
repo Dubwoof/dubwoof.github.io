@@ -31,7 +31,7 @@ export function Navigation({}: NavigationProps): JSX.Element {
                             Get Started
                         </Typography>
                     </Link>
-                    <Link to="">
+                    <Link to={Sections.Pricing}>
                         <div className={styles.tryButton}>Try it free</div>
                     </Link>
                 </div>

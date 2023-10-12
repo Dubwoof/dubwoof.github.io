@@ -30,10 +30,10 @@ export function HomeSection({ getRef }: HomeSectionProps): JSX.Element {
                         ensuring your business thrives in the evolving technological epoch.
                     </Typography>
                     <div className="flex gap-4">
-                        <Link href="">
+                        <Link href={Sections.Pricing}>
                             <div className={styles.tryButton}>Try it free</div>
                         </Link>
-                        <Link href="">
+                        <Link href={Sections.Pricing}>
                             <div className={styles.customButton}>Custom Solutions</div>
                         </Link>
                     </div>
