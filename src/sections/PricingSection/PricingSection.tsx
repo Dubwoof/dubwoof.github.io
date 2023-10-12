@@ -10,7 +10,7 @@ export function PricingSection({ getRef }: PricingSectionProps): JSX.Element {
         <section id={Sections.Pricing} ref={getRef} className={styles.section} data-style="section">
             <div className="flex flex-col w-full items-center justify-start">
                 <h1 className={styles.title}>Pricing</h1>
-                <div className="flex gap-6">
+                <div className="flex gap-10">
                     <PricingBlock title="Free" subtitle="Best for learning how to use." ctaText="Try it free" price="0" />
                     <PricingBlock title="Early Bird" subtitle="Best for using in production." ctaText="Start a free trial" price="0" />
                     <PricingBlock title="Enterprise" subtitle="Custom Software Solution for your Business." ctaText="Book appointment" />
