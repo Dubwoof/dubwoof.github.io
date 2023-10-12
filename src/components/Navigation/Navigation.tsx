@@ -18,10 +18,10 @@ export function Navigation({}: NavigationProps): JSX.Element {
                 <div className={styles.textLinks}>
                     <Link to={Sections.Demo} smooth={true} duration={500} className="cursor-pointer">
                         <Typography variant="strong" className="text-center">
-                            About
+                            Demo
                         </Typography>
                     </Link>
-                    <Link to={Sections.Pricing} smooth={true} duration={500} className="cursor-pointer">
+                    <Link to={Sections.Pricing} smooth={true} duration={500} offset={-100} className="cursor-pointer">
                         <Typography variant="strong" className="text-center">
                             Pricing
                         </Typography>
