@@ -16,17 +16,17 @@ export function Navigation({}: NavigationProps): JSX.Element {
                     <p className={styles.logo}>Nextwebs</p>
                 </Link>
                 <div className={styles.textLinks}>
-                    <Link to={Sections.About} smooth={true} duration={500} className="cursor-pointer">
+                    <Link to={Sections.Demo} smooth={true} duration={500} className="cursor-pointer">
                         <Typography variant="strong" className="text-center">
                             About
                         </Typography>
                     </Link>
-                    <Link to={Sections.Influencers} smooth={true} duration={500} className="cursor-pointer">
+                    <Link to={Sections.Pricing} smooth={true} duration={500} className="cursor-pointer">
                         <Typography variant="strong" className="text-center">
                             Pricing
                         </Typography>
                     </Link>
-                    <Link to={Sections.Contact} smooth={true} duration={500} className="cursor-pointer">
+                    <Link to={Sections.GetStarted} smooth={true} duration={500} className="cursor-pointer">
                         <Typography variant="strong" className="text-center">
                             Contact
                         </Typography>
@@ -37,13 +37,13 @@ export function Navigation({}: NavigationProps): JSX.Element {
                 </div>
 
                 <div className={styles.icons}>
-                    <Link to={Sections.About} smooth={true} duration={500} className="cursor-pointer">
+                    <Link to={Sections.Demo} smooth={true} duration={500} className="cursor-pointer">
                         <MdFaceRetouchingNatural size={32} />
                     </Link>
-                    <Link to={Sections.Influencers} smooth={true} duration={500} className="cursor-pointer">
+                    <Link to={Sections.Pricing} smooth={true} duration={500} className="cursor-pointer">
                         <HiOutlineUserGroup size={32} />
                     </Link>
-                    <Link to={Sections.Contact} smooth={true} duration={500} className="cursor-pointer">
+                    <Link to={Sections.GetStarted} smooth={true} duration={500} className="cursor-pointer">
                         <MdOutlineAlternateEmail size={32} />
                     </Link>
                     {/* <div onClick={toggleTheme}>{mode === 'light' ? <TbBulb size={32} /> : <TbBulbOff size={32} />}</div> */}
