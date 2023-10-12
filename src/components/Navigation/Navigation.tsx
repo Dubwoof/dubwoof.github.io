@@ -16,19 +16,19 @@ export function Navigation({}: NavigationProps): JSX.Element {
                     <p className={styles.logo}>Nextwebs</p>
                 </Link>
                 <div className={styles.textLinks}>
-                    <Link to={Sections.Demo} smooth={true} duration={500} className="cursor-pointer">
-                        <Typography variant="strong" className="text-center">
-                            Demo
-                        </Typography>
-                    </Link>
                     <Link to={Sections.Pricing} smooth={true} duration={500} offset={-100} className="cursor-pointer">
                         <Typography variant="strong" className="text-center">
                             Pricing
                         </Typography>
                     </Link>
+                    <Link to={Sections.Demo} smooth={true} duration={500} offset={-100} className="cursor-pointer">
+                        <Typography variant="strong" className="text-center">
+                            Demo
+                        </Typography>
+                    </Link>
                     <Link to={Sections.GetStarted} smooth={true} duration={500} className="cursor-pointer">
                         <Typography variant="strong" className="text-center">
-                            Contact
+                            Get Started
                         </Typography>
                     </Link>
                     <Link to="">
