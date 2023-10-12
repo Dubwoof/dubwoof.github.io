@@ -19,7 +19,7 @@ export function PricingBlock({ title, subtitle, price, ctaText, isAnnually }: Pr
             <>
                 <div className="flex">
                     <p className="text-xl font-bold">{price && '€'}</p>
-                    <p className="text-6xl font-bold">{price ?? 'Custom'}</p>
+                    <p className="text-4xl font-bold">{price ?? 'Custom'}</p>
                 </div>
                 <Typography variant="caption">{price ? 'for 12 Months. Then 20€ monthly.' : 'Contact us'}</Typography>
             </>
