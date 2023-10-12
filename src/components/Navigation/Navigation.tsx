@@ -31,7 +31,7 @@ export function Navigation({}: NavigationProps): JSX.Element {
                             Get Started
                         </Typography>
                     </Link>
-                    <Link to={Sections.Pricing}>
+                    <Link to={Sections.Pricing} offset={-100}>
                         <div className={styles.tryButton}>Try it free</div>
                     </Link>
                 </div>

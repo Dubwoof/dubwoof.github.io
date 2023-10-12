@@ -5,7 +5,7 @@ import { HomeSectionProps } from './HomeSection.props';
 import { Sections } from '@/enums/Sections';
 import Image from 'next/image';
 import { Typography } from '@/elements/Typography/Typography';
-import Link from 'next/link';
+import { Link } from 'react-scroll';
 
 export function HomeSection({ getRef }: HomeSectionProps): JSX.Element {
     return (
@@ -30,10 +30,10 @@ export function HomeSection({ getRef }: HomeSectionProps): JSX.Element {
                         ensuring your business thrives in the evolving technological epoch.
                     </Typography>
                     <div className="flex gap-4">
-                        <Link href={Sections.Pricing}>
+                        <Link to={Sections.Pricing} offset={-100}>
                             <div className={styles.tryButton}>Try it free</div>
                         </Link>
-                        <Link href={Sections.Pricing}>
+                        <Link to={Sections.Pricing} offset={-100}>
                             <div className={styles.customButton}>Custom Solutions</div>
                         </Link>
                     </div>
