@@ -3,5 +3,6 @@ export const styles = {
     content: 'flex gap-4 w-full bg-purple-100',
     title: 'text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600 mb-4',
     tryButton: 'bg-primary text-white font-bold py-2 px-4 rounded-full cursor-pointer w-max',
+    customButton: 'bg-card text-primary font-bold py-2 px-4 rounded-full cursor-pointer w-max border-primary border-[1px]',
     headline: 'bg-green-100 mt-4',
 };

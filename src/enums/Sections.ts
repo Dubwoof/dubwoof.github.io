@@ -1,6 +1,6 @@
 export enum Sections {
-    StageHeader = 'StageHeader',
     Home = 'Home',
+    Pricing = 'Pricing',
     Cases = 'Cases',
     Brands = 'Brands',
     About = 'About',

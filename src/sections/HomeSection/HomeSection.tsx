@@ -29,10 +29,14 @@ export function HomeSection({ getRef }: HomeSectionProps): JSX.Element {
                         Revolutionizing enterprise digital landscapes with cutting-edge micro frontends, we deliver scalable, innovative, and bespoke solutions,
                         ensuring your business thrives in the evolving technological epoch.
                     </Typography>
-
-                    <Link href="">
-                        <div className={styles.tryButton}>Try it free</div>
-                    </Link>
+                    <div className="flex gap-4">
+                        <Link href="">
+                            <div className={styles.tryButton}>Try it free</div>
+                        </Link>
+                        <Link href="">
+                            <div className={styles.customButton}>Custom Solutions</div>
+                        </Link>
+                    </div>
                 </div>
                 <div className="w-3/5">
                     <div className="w-full h-full bg-microFrontends rounded-3xl bg-cover"></div>
