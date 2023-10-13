@@ -26,7 +26,7 @@ export function Navigation({}: NavigationProps): JSX.Element {
                             Demo
                         </Typography>
                     </Link>
-                    <Link to={Sections.GetStarted} smooth={true} duration={500} className="cursor-pointer">
+                    <Link to={Sections.GetStarted} smooth={true} duration={500} offset={-100} className="cursor-pointer">
                         <Typography variant="strong" className="text-center">
                             Get Started
                         </Typography>
