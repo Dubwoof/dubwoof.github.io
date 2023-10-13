@@ -6,7 +6,9 @@ export function Sandbox(): JSX.Element {
                 width: '100%',
                 height: '500px',
                 border: '0',
-                borderRadius: '4px',
+                 // right border radius
+                borderTopRightRadius: '1rem',
+                borderBottomRightRadius: '1rem',
                 overflow: 'hidden',
             }}
             title="iframe-widget-nextwebs"
