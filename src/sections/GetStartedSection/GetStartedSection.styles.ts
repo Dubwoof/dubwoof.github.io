@@ -4,6 +4,6 @@ export const styles = {
     title: 'text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600 mb-4',
 };
 
-export function tabSelect(isActive: boolean) {
-    return `hover:bg-background h-12 px-4 flex items-center cursor-pointer ${isActive ? 'text-primary' : 'text-text'}`;
+export function tabSelect(isActive: boolean, isFirst?: boolean) {
+    return `hover:bg-background h-12 px-4 flex items-center cursor-pointer ${isActive ? 'text-primary' : 'text-text'} ${isFirst ? 'rounded-ss-3xl' : ''}`;
 }
