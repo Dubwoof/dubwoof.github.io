@@ -1,5 +1,6 @@
 'use client';
 
+import { Footer } from '@/components/Footer/Footer';
 import { useViewportSection } from '@/hooks/useViewportSection';
 import { DemoSection } from '@/sections/DemoSection/DemoSection';
 import { GetStartedSection } from '@/sections/GetStartedSection/GetStartedSection';
@@ -16,7 +17,7 @@ export default function Home() {
             <PricingSection getRef={registerSectionRef} />
             <DemoSection getRef={registerSectionRef} />
             <GetStartedSection getRef={registerSectionRef} />
-
+            <Footer /> 
             {/* {showFabContainer && <FabContainer />} */}
         </div>
     );

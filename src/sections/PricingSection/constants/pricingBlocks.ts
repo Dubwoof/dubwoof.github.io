@@ -1,4 +1,4 @@
-import { PricingBlock } from "../types/PricingBlock";
+import { PricingBlock } from '../types/PricingBlock';
 
 export const pricingBlocks: PricingBlock[] = [
     {
@@ -6,14 +6,15 @@ export const pricingBlocks: PricingBlock[] = [
         subtitle: 'Best for learning how to use our widgets & modules.',
         ctaText: 'Try it free',
         price: '0',
-        usps: ['1 user', 'Demo Content', 'upgradable to Early Bird'],
+        usps: ['1 user', 'Demo Calculation & Content', 'upgradable to Early Bird'],
     },
     {
         title: 'Early Bird',
         subtitle: 'Best for using in your production environment.',
         ctaText: 'Start a free trial',
-        price: '0',
+        price: '20',
         usps: ['Full usage of up to 3 widgets & modules', '200 Requests per day', 'mail support'],
+        plan: 'earlyBird',
     },
     {
         title: 'Enterprise',

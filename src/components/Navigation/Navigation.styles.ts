@@ -7,5 +7,6 @@ export const styles = {
     textLinks: 'hidden gap-8 sm:flex items-center',
     icons: 'flex gap-8 sm:hidden',
     logo: 'text-xl font-bold text-gray-900 font-comfortaa text-primary',
-    tryButton: 'bg-primary text-white font-bold py-2 px-4 rounded-full cursor-pointer',
+    tryButton: 'bg-primary text-white font-bold px-4 rounded-full cursor-pointer border-1 h-8 items-center flex',
+    signInButton: 'bg-card border-primary text-primary pl-[0.125rem] pr-4 rounded-full cursor-pointer flex gap-2 items-center border-[1px] h-8',
 };

@@ -4,4 +4,5 @@ export interface PricingBlock {
     ctaText: string;
     price?: string;
     usps?: string[];
+    plan?: 'free' | 'earlyBird' | 'enterprise';
 }

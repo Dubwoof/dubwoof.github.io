@@ -17,7 +17,7 @@ export function Main({ children }: { children: ReactNode }): JSX.Element {
             <div id="wrapperChildren" className="relative w-full h-screen">
                 {children}
             </div>
-            <Footer />
+            
         </main>
     );
 }

@@ -7,6 +7,8 @@ import { styles } from './Navigation.styles';
 import { Link } from 'react-scroll';
 import { Sections } from '@/enums/Sections';
 import { Typography } from '@/elements/Typography/Typography';
+import { FaUserCircle } from 'react-icons/fa';
+import { Colors } from '@/enums/Colors';
 
 export function Navigation({}: NavigationProps): JSX.Element {
     return (
@@ -33,6 +35,12 @@ export function Navigation({}: NavigationProps): JSX.Element {
                     </Link>
                     <Link to={Sections.Pricing} offset={-100}>
                         <div className={styles.tryButton}>Try it free</div>
+                    </Link>
+                    <Link to="/signin" offset={-100}>
+                        <div className={styles.signInButton}>
+                            <FaUserCircle size={28} color={Colors.Primary} />
+                            Sign in
+                        </div>
                     </Link>
                 </div>
 

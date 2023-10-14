@@ -3,7 +3,6 @@
 import { styles } from './HomeSection.styles';
 import { HomeSectionProps } from './HomeSection.props';
 import { Sections } from '@/enums/Sections';
-import Image from 'next/image';
 import { Typography } from '@/elements/Typography/Typography';
 import { Link } from 'react-scroll';
 

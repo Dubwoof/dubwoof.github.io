@@ -19,6 +19,9 @@ const config: Config = {
             },
             backgroundImage: {
                 microFrontends: 'url(/micro-frontends.png)',
+                realEstate1: 'url(/images/real-estate-1.jpeg)',
+                realEstate2: 'url(/images/real-estate-2.webp)',
+                realEstate3: 'url(/images/real-estate-3.jpeg)',
             },
         },
     },
