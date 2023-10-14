@@ -21,7 +21,7 @@ export function GetStartedSection({ getRef }: GetstartedSectionProps): JSX.Eleme
         <section id={Sections.GetStarted} ref={getRef} className={styles.section} data-style="section">
             <div className="flex flex-col w-full items-center justify-start">
                 <h1 className={styles.title}>Get Started</h1>
-                <div className="flex w-full bg-slate-100/40 backdrop-blur-3xl rounded-3xl shadow-lg">
+                <div className="flex w-full bg-slate-200/40 backdrop-blur-3xl rounded-3xl shadow-lg">
                     <div className="flex flex-col w-[350px] h-fit">
                         <div onClick={() => handleTabClick('iframe')} className={tabSelect(activeTab === 'iframe')}>
                             <Typography variant="strong">iFrame</Typography>

@@ -1,4 +1,6 @@
 import { Typography } from '@/elements/Typography/Typography';
+import { Colors } from '@/enums/Colors';
+import { BsCheckSquare } from 'react-icons/bs';
 
 interface PricingTabProps {
     title: string;
@@ -6,11 +8,12 @@ interface PricingTabProps {
     price?: string;
     ctaText: string;
     isAnnually?: boolean;
+    usps?: string[];
 }
 
-export function PricingBlock({ title, subtitle, price, ctaText, isAnnually }: PricingTabProps): JSX.Element {
+export function PricingBlock({ title, subtitle, price, ctaText, isAnnually, usps }: PricingTabProps): JSX.Element {
     return (
-        <div className="w-[18rem] h-[24rem] bg-background rounded-xl p-4 ">
+        <div className="w-[18rem] h-[25rem] bg-background rounded-xl p-4 ">
             <h2 className="text-primmary font-comfortaa text-3xl font-bold">{title}</h2>
             <Typography variant="light" className="mb-4">
                 {subtitle}
@@ -26,7 +29,16 @@ export function PricingBlock({ title, subtitle, price, ctaText, isAnnually }: Pr
 
             {isAnnually && <Typography variant="light">Billed annually</Typography>}
 
-            <div className="mt-4 flex flex-col items-center justify-center w-full h-min rounded-md bg-primary text-textSecondary p-2">{ctaText}</div>
+            <div className="mt-4 flex flex-col items-center justify-center w-full h-min rounded-md bg-primary text-textSecondary p-2 mb-4">{ctaText}</div>
+            {(usps || []).map((usp, i) => (
+                <div className="flex items-start gap-2 mb-2" key={i}>
+                    <div className="flex pt-1">
+                        <BsCheckSquare color={Colors.Primary} size={16} />
+                    </div>
+
+                    <Typography variant="light">{usp}</Typography>
+                </div>
+            ))}
         </div>
     );
 }

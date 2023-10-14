@@ -5,5 +5,5 @@ export const styles = {
 };
 
 export function tabSelect(isActive: boolean) {
-    return `hover:bg-background h-12 px-2 flex items-center cursor-pointer ${isActive ? 'text-primary' : 'text-text'}`;
+    return `hover:bg-background h-12 px-4 flex items-center cursor-pointer ${isActive ? 'text-primary' : 'text-text'}`;
 }
