@@ -23,7 +23,7 @@ export function PricingBlock({ title, subtitle, price, ctaText, isAnnually, usps
             <>
                 <div className="flex">
                     <p className="text-xl font-bold">{price && '€'}</p>
-                    <p className="text-4xl font-bold">{price ? '0' : 'Custom'}</p>
+                    <p className="text-4xl font-bold">{price ? '0' : "Let's Talk"}</p>
                 </div>
                 <Typography variant="caption">
                     {price ? `for 12 Months. Then ${isAnnually ? (parseFloat(price) * 0.75).toString() : price}€ monthly.` : 'Contact us'}
@@ -32,7 +32,9 @@ export function PricingBlock({ title, subtitle, price, ctaText, isAnnually, usps
 
             {isAnnually ? <Typography variant="caption">Billed annually</Typography> : <Typography variant="caption">Billed monthly</Typography>}
 
-            <div className="mt-4 flex flex-col items-center justify-center w-full cursor-pointer h-min rounded-md bg-primary text-textSecondary p-2 mb-4">{ctaText}</div>
+            <div className="mt-4 flex flex-col items-center justify-center w-full cursor-pointer h-min rounded-md bg-primary text-textSecondary p-2 mb-4">
+                {ctaText}
+            </div>
             {(usps || []).map((usp, i) => (
                 <div className="flex items-start gap-2 mb-2" key={i}>
                     <div className="flex pt-1">
@@ -45,7 +47,9 @@ export function PricingBlock({ title, subtitle, price, ctaText, isAnnually, usps
             {plan === 'earlyBird' && (
                 <>
                     <Typography variant="caption" className="mt-4">
-                        Early Bird Special is limited.<br />Free plans available:
+                        Early Bird Special is limited.
+                        <br />
+                        Free plans available:
                     </Typography>
 
                     <div className="w-full h-6 border-primary bg-card border-[1px] rounded-full">

@@ -8,7 +8,6 @@ export function useViewportSection() {
 
     useEffect(() => {
         const handleIntersection = (entries: IntersectionObserverEntry[]) => {
-            // console.log(entries);
             entries.forEach((entry: IntersectionObserverEntry) => {
                 if (entry.isIntersecting) {
                     setActiveSection(entry.target.id);
