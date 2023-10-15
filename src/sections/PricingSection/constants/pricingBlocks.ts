@@ -20,6 +20,6 @@ export const pricingBlocks: PricingBlock[] = [
         title: 'Enterprise',
         subtitle: 'Custom Software Solution for your Business.',
         ctaText: 'Book appointment',
-        usps: ['Unlimited widgets & modules', 'Custom widgets & modules for your enterprise', 'personal support'],
+        usps: ['Unlimited widgets & modules usage', 'Custom widgets & modules for your enterprise', 'personal support'],
     },
 ];

@@ -1,6 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react';
 import { CashFlowWidget } from './CashFlowWidget';
-import { BrowserRouter } from 'react-router-dom';
 
 const meta = {
     title: 'CashFlowWidget',
@@ -28,11 +27,9 @@ const meta = {
     },
     render: args => {
         return (
-            <BrowserRouter>
-                <div style={{ padding: 0, margin: 0 }}>
-                    <CashFlowWidget {...args} />
-                </div>
-            </BrowserRouter>
+            <div style={{ padding: 0, margin: 0 }}>
+                <CashFlowWidget {...args} />
+            </div>
         );
     },
 } satisfies Meta<typeof CashFlowWidget>;
